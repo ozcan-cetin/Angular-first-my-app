@@ -1,2 +1,24 @@
 <p>home works!</p>
 <app-content-list></app-content-list>
+
+<ul>
+    <li *ngFor="let user of users; let i = index">
+        {{i}}
+       <strong *ngIf="user.age < 8" appHighlight>{{user.name}}</strong>
+        {{user.age}} yaşındadır.
+    </li>
+</ul>
+
+
+<!-- <div [ngStyle]="{'font-weight': 700}">NgStyle Example1</div>
+
+<div [ngStyle]="{'height':'200px'}">NgStyle Example2</div>
+<div [ngStyle]="{'height.px': 50}">NgStyle Example2</div> -->
+
+<!-- <div [ngClass]="'class1 class2'">NgClass Example 1</div>
+
+<div [ngClass]="['class1 class2']">NgClass Example 2</div>
+
+<div [ngClass]="{'class1':3<5, 'class2':'asd' !== 'asd'}">NgClass Example 3</div>
+
+<div [ngClass]="{'class1 class2 class3': 10 === 10}">NgClass Example 3</div> -->
