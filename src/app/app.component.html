@@ -1,2 +1,6 @@
 <app-header></app-header>
+<!-- <child  [count]="parentcount"></child>
+<button (click)="add()">arttır</button>
+<button (click)="dec()">azalt</button> -->
+<child (PersonelEvent)="AddPersonel($event)"></child>
 <router-outlet></router-outlet>

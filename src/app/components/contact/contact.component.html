@@ -1,8 +1,14 @@
 <p>contact works!</p>
-{{username}}
+<!-- {{username}} -->
 
-<ul>
+<ul [ngClass]="{users: true}">
     <li *ngFor="let item of user">
-{{item.name}}
+<span>{{item.name | avatar}}</span> - {{item.name}}
     </li>
 </ul>
+
+<!-- {{today | date:'d MMM Y' | uppercase}}
+<br>
+<br>
+{{11300|currency:"EUR"}} -->
+
